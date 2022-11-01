@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PaymentsReconciliation
 {
@@ -10,6 +6,20 @@ namespace PaymentsReconciliation
     {
         static void Main(string[] args)
         {
+            PrintWelcomeMessage();
+
+            PrintWait();
+        }
+
+        private static void PrintWait()
+        {
+            Console.ReadLine();
+        }
+
+        private static void PrintWelcomeMessage()
+        {
+            string welcomeMessage = "Welcome to PaymentsReconciliation App";
+            System.Console.WriteLine(welcomeMessage);
         }
     }
 }
